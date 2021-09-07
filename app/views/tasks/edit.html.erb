@@ -1,7 +1,7 @@
 <%= simple_form_for(@task) do |f| %>
   <%= f.input :title %>
   <%= f.input :details %>
-  <%= f.check_box :completed %>
+  <%= f.input :completed %>
   <%= f.submit %>
 <% end %>
 <p><%= link_to "Back to list", tasks_path %></p>
